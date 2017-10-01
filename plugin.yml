@@ -1,0 +1,5 @@
+name: FantasyCore
+version: 0.1-beta
+author: Enrick3344
+main: FantasyCore\Main
+api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9]
