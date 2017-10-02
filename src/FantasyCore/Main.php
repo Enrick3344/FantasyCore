@@ -87,13 +87,12 @@ public function translateColors($string){
     $text[2] = TextFormat::LIGHT_PURPLE . "Website: " . TextFormat::WHITE . "fantasy-network.org";
     $text[3] = TextFormat::LIGHT_PURPLE . "Vote Website " . TextFormat::WHITE . "bit.do/fantasyisland";
     $text[4] = TextFormat::DARK_PURPLE . "##################";
-    foreach($player as $pl){
-      $pl->sendMessage($text[0]);
-      $pl->sendMessage($text[1]);
-      $pl->sendMessage($text[2]);
-      $pl->sendMessage($text[3]);
-      $pl->sendMessage($text[4]);
-    }
+    $player->sendMessage($text[0]);
+    $player->sendMessage($text[1]);
+    $player->sendMessage($text[2]);
+    $player->sendMessage($text[3]);
+    $player->sendMessage($text[4]);
+    return true;
   }
 
 }
