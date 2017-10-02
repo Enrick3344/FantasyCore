@@ -96,7 +96,15 @@ public function translateColors($string){
     $player->sendMessage($text[3]);
     $player->sendMessage($text[4]);
     $player->sendMessage($text[5]);
-
+	$item[0] = Item::get(433, 0, 1)->setCustomName("§r§l§5:§d:§f:§r§bSpawn§l§f:§d:§5:");
+   	 $player->getInventory()->setItem($player->getInventory()->getHotbarSlotIndex(0), $item[0]);
   }
+	
+	public function onInteract(PlayerInteractEvent $event){
+        	$player = $event->getPlayer();
+        	$name = $player->getName();
+       		$item = $player->getInventory()->getItemInHand();
+		if($item->getName() == "§r§l§5:§d:§f:§r§bSpawn§l§f:§d:§5:"){
+		}
 
 }
