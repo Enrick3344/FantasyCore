@@ -25,6 +25,7 @@ namespace FantasyCore;
 
 use pocketmine\Player;
 use pocketmine\Server;
+use pocketmine\item\Item;
 use pocketmine\utils\Config;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
@@ -69,6 +70,12 @@ public function translateColors($string){
 		$msg = str_replace("&l",TextFormat::BOLD,$msg);
 		$msg = str_replace("&r",TextFormat::RESET,$msg);
 		return $msg;
+	}
+	
+	public function setBarItems(){
+		$player = $this->getServer()->getPlayer();
+		$player->getInventory()->setItem(0,Item::get(433,0,1)->setCustomName("§l§5:§d:§f:§r§bSpawn§l§f:§d:§5:"));
+		$player->getInventory()->setHotbarSlotIndex(0,0);
 	}
   
 /*                       _       
