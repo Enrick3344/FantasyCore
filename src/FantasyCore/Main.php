@@ -30,6 +30,7 @@ use pocketmine\utils\Config;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
 use pocketmine\plugin\PluginBase;
+use pocketmine\inventory\PlayerInventory;
 use pocketmine\event\player\PlayerJoinEvent;
 
 
@@ -73,7 +74,7 @@ public function translateColors($string){
 	}
 	
 	public function setBarItems($player){
-		$player->getInventory()->setItem(0,Item::get(433,0,1)->setCustomName("§l§5:§d:§f:§r§bSpawn§l§f:§d:§5:"));
+		$player->getInventory()->setItem(0,Item::get(433,0,1)->setCustomName("§r§l§5:§d:§f:§r§bSpawn§l§f:§d:§5:"));
 		$player->getInventory()->setHotbarSlotIndex(0,0);
 	}
   
