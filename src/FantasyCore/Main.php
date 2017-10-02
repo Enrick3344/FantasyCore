@@ -82,16 +82,20 @@ public function translateColors($string){
   public function onJoin(PlayerJoinEvent $event){
     $player = $event->getPlayer();
     $name = $player->getName();
-    $text[0] = TextFormat::DARK_PURPLE . "##################";
-    $text[1] = TextFormat::WHITE . "Welcome, $name";
+    $text[0] = TextFormat::DARK_PURPLE . "##########################";
+    $text[1] = TextFormat::AQUA . "Welcome, $name";
     $text[2] = TextFormat::LIGHT_PURPLE . "Website: " . TextFormat::WHITE . "fantasy-network.org";
     $text[3] = TextFormat::LIGHT_PURPLE . "Vote Website " . TextFormat::WHITE . "bit.do/fantasyisland";
-    $text[4] = TextFormat::DARK_PURPLE . "##################";
+    $text[4] = TextFormat::AQUA . "This server is Powered by";
+    $text[5] = TextFormat::AQUA . "The Fantasy Core";
+    $text[6] = TextFormat::DARK_PURPLE . "##########################";
     $player->sendMessage($text[0]);
     $player->sendMessage($text[1]);
     $player->sendMessage($text[2]);
     $player->sendMessage($text[3]);
     $player->sendMessage($text[4]);
+    $player->sendMessage($text[5]);
+    $player->sendMessage($text[6]);
     return true;
   }
 
