@@ -74,8 +74,8 @@ public function translateColors($string){
 	}
 	
 	public function setBarItems($player){
-		$player->getInventory()->setItem(0,Item::get(433,0,1)->setCustomName("§r§l§5:§d:§f:§r§bSpawn§l§f:§d:§5:"));
-		$player->getInventory()->setHotbarSlotIndex(0,0);
+		$player->getInventory()->setItem(1, Item::get(433,0,1)->setCustomName("§r§l§5:§d:§f:§r§bSpawn§l§f:§d:§5:"));
+		$player->getInventory()->setHotbarSlotIndex(0,1);
 	}
   
 /*                       _       
