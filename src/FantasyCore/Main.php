@@ -72,8 +72,7 @@ public function translateColors($string){
 		return $msg;
 	}
 	
-	public function setBarItems(){
-		$player = $this->getServer()->getPlayer();
+	public function setBarItems($player){
 		$player->getInventory()->setItem(0,Item::get(433,0,1)->setCustomName("§l§5:§d:§f:§r§bSpawn§l§f:§d:§5:"));
 		$player->getInventory()->setHotbarSlotIndex(0,0);
 	}
@@ -101,7 +100,8 @@ public function translateColors($string){
     $player->sendMessage($text[3]);
     $player->sendMessage($text[4]);
     $player->sendMessage($text[5]);
-    return true;
+
+    $this->setBarItems($player);
   }
 
 }
