@@ -71,12 +71,7 @@ public function translateColors($string){
 		$msg = str_replace("&l",TextFormat::BOLD,$msg);
 		$msg = str_replace("&r",TextFormat::RESET,$msg);
 		return $msg;
-	}
-	
-	public function setBarItems($player){
-		Player::getInventory()->setItem(1, Item::get(433,0,1)->setCustomName("§r§l§5:§d:§f:§r§bSpawn§l§f:§d:§5:"));
-		Player::getInventory()->setHotbarSlotIndex(1,0);
-	}
+}
   
 /*                       _       
  *   _____   _____ _ __ | |_ ___ 
@@ -102,7 +97,6 @@ public function translateColors($string){
     $player->sendMessage($text[4]);
     $player->sendMessage($text[5]);
 
-    $this->setBarItems($player);
   }
 
 }
