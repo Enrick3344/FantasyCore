@@ -1,3 +1,4 @@
+<?php
 /*
  *
  *  _____           _                   ____               
@@ -5,7 +6,7 @@
  * | |_ / _` | '_ \| __/ _` / __| | | | |   / _ \| '__/ _ \
  * |  _| (_| | | | | || (_| \__ \ |_| | |__| (_) | | |  __/
  * |_|  \__,_|_| |_|\__\__,_|___/\__, |\____\___/|_|  \___|
- * 								 |___/                     
+ * 				 |___/                     
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
